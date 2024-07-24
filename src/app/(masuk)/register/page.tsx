@@ -4,15 +4,51 @@ import logo from "../../../../public/Group 2.svg"
 
 function Page() {
   return (
-    <div className='bg-gradient-to-b from-[#4D2067] to-[#9840CD] min-h-screen'>
-    <Image src={logo} alt='logo' className='translate-y-[120px]' width={261} height={39}/>
-        <div className='grid grid-cols-2 ms-14 py-12'>
-            <div className='bg-[#74298E]'>
-
-            </div>
-            <div>
-             <Image src="/Rectangle151.png" className="w-[505px] h-[600px]" width={200} height={200} alt='login'/>
-            </div>
+    <div className='bg-gradient-to-b from-[#4D2067] to-[#9840CD] w-screen min-h-screen'>
+      <div className='bg-black blur-md bg-opacity-25 w-[860px] translate-x-12'></div>
+      <div className=' relative'>
+      <Image src={logo} alt='logo' className='absolute top-[70px] -translate-x-[266px] right-0' width={140} height={39}/>
+          <div className='grid grid-cols-2 pt-[70px] '>
+              <div className='bg-[#74298E] w-[430px] ms-auto shadow-[21px_20px_5px] shadow-[#00000052]'>
+                <div className='flex flex-col mx-16 my-16 space-y-5'>
+                 <div className='space-y-9'>
+                 <p className='font-bold uppercase text-[18px]'>Login</p>
+                 <div>
+                      <input type='email' 
+                                name='email'
+                                placeholder='Email'
+                                className="w-full rounded-md h-[45px] placeholder:text-[#AB00E7] text-[10px] pb-6 ps-3 uppercase" />                        
+                      </div>
+                <div>
+                      <input type='password' 
+                                name='password'
+                                placeholder='password'
+                                className="w-full rounded-md h-[45px]  text-[10px] pb-6 ps-3 uppercase placeholder:text-[#AB00E7]" />                        
+                      </div>
+                    </div>
+                  <div className='flex space-x-2'>
+                      <input
+                        type='checkbox'
+                        id='remember'
+                        className='appearance-none h-4 w-4 rounded-full bg-[#D9D9D9] checked:bg-[#c866ecdd]'
+                      />
+                      <label htmlFor='remember' className='text-white uppercase text-[10px] pt-[2px]'>Remember me</label>
+                    </div>
+                    <div className='space-x-24 ms-3 space-y-16'>
+                      <button className='bg-white h-[35px] w-[90px] text-[10px] rounded-md font-bold items-center text-[#AB00E7]'>
+                        REGISTER
+                      </button>
+                      <button className='bg-[#AB00E7] h-[35px] w-[90px] text-[10px] rounded-md font-bold items-center'>
+                        LOGIN
+                      </button>
+                    </div>
+                    <p className='text-[10px] ms-5 -translate-y-4'>IF FIRST TIME</p>
+                </div>
+              </div>
+              <div className=''>
+              <Image src="/Rectangle151.jpg" className="w-[440px] h-[530px] shadow-[20px_20px_5px] shadow-[#00000052]" width={400} height={200} alt='login'/>
+              </div>
+          </div>
         </div>
     </div>
   )
