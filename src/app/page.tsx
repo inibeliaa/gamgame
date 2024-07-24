@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "./components/navbar";
 import Main from "./components/main";
 import Ourgame from "./components/ourgame";
+import Trending from "./components/trending";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         </div>
        </div>
       <Ourgame/>
+      <Trending/>
     </main>
   );
 }

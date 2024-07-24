@@ -1,10 +1,13 @@
 import React from 'react'
+import CustomArrows from './carousel'
 
 function Ourgame() {
   return (
-    <div className='bg-gradient-to-b h-screen from-black to-[#260A37]'>
-       <p className='text-[#AB00E7] font-semibold text-[28px] ps-5'>OUR<span className='text-white'>GAME</span></p> 
+    <div className='bg-gradient-to-b from-black via-black to-[#260A37]'>
+       <p className='text-[#4F378B] font-extrabold text-[22px] ms-[250px] mt-[42px]'>OUR<span className='text-white'>GAME</span></p> 
+      <CustomArrows/>
     </div>
+
   )
 }
 
