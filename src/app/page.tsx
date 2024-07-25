@@ -3,10 +3,14 @@ import Navbar from "./components/navbar";
 import Main from "./components/main";
 import Ourgame from "./components/ourgame";
 import Trending from "./components/trending";
+import Review from "./components/review";
+import Carousel3 from "./components/carousel3";
+import Footer from "./components/footer";
+import Live from "./components/live";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="h-screen">
       <Navbar/>
       <div className="w-full h-screen bg-cover bg-opacity-80" style={{ backgroundImage: "url('/colorful.png')"}}>
       <div className="bg-black bg-opacity-50">
@@ -17,6 +21,9 @@ export default function Home() {
        </div>
       <Ourgame/>
       <Trending/>
+      <Live/>
+      <Carousel3/>
+      <Footer/>
     </main>
   );
 }
