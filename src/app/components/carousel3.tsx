@@ -31,7 +31,7 @@ function Carousel3() {
   };
 
   return (
-    <div className="h-screen">
+    <div className="h-screen bg-[#260A37]">
       <div className='bg-[#5D2588] h-[100px] pt-[26px] ps-[30px]'>
         <p className='text-[35px] font-bold uppercase'><span className='text-[#CE7FFF]'>review</span> by players</p>
       </div>
@@ -39,7 +39,7 @@ function Carousel3() {
         ref={sliderRef}
         {...settings}
       >
-        <div className="bg-[#260A37]">
+        <div className="">
         <div className='grid grid-cols-7 pt-[90px] h-[450px] px-[70px]'>
           <div className=' '>
             <Image src={icon1} alt='icon1' width={250} height={250}/>
@@ -103,7 +103,7 @@ function Carousel3() {
         </div>
         </div>
       </Slider>
-        <div style={{ textAlign: "center" }} className="-translate-y-28 space-x-8">
+        <div style={{ textAlign: "center" }} className="-translate-y-28 space-x-8 pb-28">
           <button className="button bg-[#5D2588] p-1" onClick={previous}>
           <svg width="40" height="40" className="scale-x-[-1]" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M36.75 35L23.3333 21.5833L27.4167 17.5L44.9167 35L27.4167 52.5L23.3333 48.4167L36.75 35Z" fill="#FEF7FF"/>
