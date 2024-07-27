@@ -1,11 +1,12 @@
 import React from 'react'
 
-function Card1({foto,genre1,genre2,judul,desc}:{foto:any,genre1:string,genre2:string, judul:string, desc:string}) {
+function Card1({foto,genre1,judul,desc}:{foto:any, genre1:string, judul:string, desc:string}) {
   return (
-   <div className='bg-[#A571C6] '>
+   <div className='bg-[#A571C6] mt-10 w-[260px] rounded-b-xl'>
       <img src={foto} alt='foto'/>
-      <p className="text-[#260A37] text-sm font-bold">{genre1}<span className="text-white ms-3">
-              {genre2}</span></p>
+      <div className='p-2'>
+      <p className="text-[#260A37] text-xs font-bold">Genre<span className="text-white ms-3">
+              {genre1}</span></p>
       <p className="uppercase text-2xl font-extrabold">{judul}</p>
       <ul className="flex space-x-3">
               <li className="text-[18px] text-[#DCE013]">
@@ -22,6 +23,10 @@ function Card1({foto,genre1,genre2,judul,desc}:{foto:any,genre1:string,genre2:st
               </li>
             </ul>
       <p className="text-[15px]">{desc}</p>
+      <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase ms-[130px] font-extrabold bg-[#5B0292] rounded-lg">
+                  Details
+      </button>
+      </div>
    </div>
   )
 }
