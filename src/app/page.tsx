@@ -7,6 +7,8 @@ import Review from "./components/review";
 import Carousel3 from "./components/carousel3";
 import Footer from "./components/footer";
 import Live from "./components/live";
+import Coming from "./components/coming";
+import Best from "./components/best";
 
 export default function Home() {
   return (
@@ -21,7 +23,9 @@ export default function Home() {
        </div>
       <Ourgame/>
       <Trending/>
+      <Coming/>
       <Live/>
+      <Best/>
       <Carousel3/>
       <Footer/>
     </main>
