@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function Card1({foto,genre1,judul,desc}:{foto:any, genre1:string, judul:string, desc:string}) {
@@ -23,9 +24,11 @@ function Card1({foto,genre1,judul,desc}:{foto:any, genre1:string, judul:string, 
               </li>
             </ul>
       <p className="text-[15px]">{desc}</p>
-      <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase ms-[130px] font-extrabold bg-[#5B0292] rounded-lg">
-                  Details
-      </button>
+      <Link href='/detail'>
+        <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase ms-[130px] font-extrabold bg-[#5B0292] rounded-lg">
+                    Details
+        </button>
+      </Link>
       </div>
    </div>
   )

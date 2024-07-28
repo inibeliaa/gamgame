@@ -36,7 +36,7 @@ function CustomArrows() {
    
   };
   return (
-    <div className="w-[900px] mx-auto h-screen ">
+    <div className="w-[900px] mx-auto h-screen">
       <Slider {...settings}>
         <div>
           <Image src='/game1.png' className="mt-[50px] mx-auto shadow-[0px_0px_40px_12px] shadow-[#CB76FF]" alt="game 1" width={700} height={100}/>

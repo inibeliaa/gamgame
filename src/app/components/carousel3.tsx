@@ -31,8 +31,8 @@ function Carousel3() {
   };
 
   return (
-    <div className="h-screen bg-[#260A37]">
-      <div className='bg-[#5D2588] h-[100px] pt-[26px] ps-[30px]'>
+    <div className="h-screen bg-[#260A37] -translate-y-[129px] -z-50">
+      <div className='bg-[#5D2588] h-[100px] pt-[38px] pb-4 ps-[30px]'>
         <p className='text-[35px] font-bold uppercase'><span className='text-[#CE7FFF]'>review</span> by players</p>
       </div>
       <Slider

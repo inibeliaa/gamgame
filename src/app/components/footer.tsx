@@ -12,7 +12,7 @@ import apk4 from "../../../public/Group 124.svg"
 
 function Footer() {
   return (
-    <footer className='min-h-screen bg-gradient-to-b from-[#260A37] to-[#5D2588] -translate-y-12'>
+    <footer className='min-h-screen bg-gradient-to-b from-[#260A37] to-[#5D2588] -translate-y-[130px]'>
         <Image src={footer} width={1000} height={200} className='w-screen' alt='footer'/>
         <div className='grid grid-cols-2 h-[500px]'>
             <div className='my-14 mx-12 justify-center'>

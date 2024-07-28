@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 function Navbar() {
   return (
-    <nav className='fixed top-0 z-10 w-full'>
+    <nav className='fixed top-0 z-20 w-full'>
         <ul className='flex justify-between'>
             <li className='mt-[27px] ps-[40px]'>
                 <Image src={logo} alt='logo' width={261} height={39}/>

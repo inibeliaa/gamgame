@@ -3,7 +3,6 @@ import Navbar from "./components/navbar";
 import Main from "./components/main";
 import Ourgame from "./components/ourgame";
 import Trending from "./components/trending";
-import Review from "./components/review";
 import Carousel3 from "./components/carousel3";
 import Footer from "./components/footer";
 import Live from "./components/live";
@@ -25,8 +24,8 @@ export default function Home() {
       <Trending/>
       <Coming/>
       <Live/>
-      <Best/>
-      <Carousel3/>
+        <Best/>
+        <Carousel3/>
       <Footer/>
     </main>
   );

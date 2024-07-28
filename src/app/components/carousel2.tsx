@@ -17,7 +17,7 @@ function Carousel2() {
   return (
     <div className="w-[900px] mt-[10px] mx-auto">
       <Slider {...settings}>
-        <div className="">
+        <div className="ms-2">
         <div className="grid grid-cols-2">
           <Image src='/Rectangle15.png' className='' width={450} height={250} alt="war"/>
           <div className="bg-[#A571C4] w-[452px] space-y-1 py-2 px-5 rounded-e-lg -translate-x-4">
@@ -56,7 +56,7 @@ function Carousel2() {
          </div>
         </div>
         </div>
-        <div className="">
+        <div className="ms-2">
         <div className="grid grid-cols-2">
           <Image src='/Rectangle15.png' className='' width={450} height={250} alt="war"/>
           <div className="bg-[#A571C4] w-[452px] space-y-1 py-2 px-5 rounded-e-lg -translate-x-4">
@@ -95,7 +95,7 @@ function Carousel2() {
          </div>
         </div>
         </div>
-        <div className="">
+        <div className="ms-2">
         <div className="grid grid-cols-2">
           <Image src='/Rectangle15.png' className='' width={450} height={250} alt="war"/>
           <div className="bg-[#A571C4] w-[452px] space-y-1 py-2 px-5 rounded-e-lg -translate-x-4">
@@ -134,7 +134,7 @@ function Carousel2() {
          </div>
         </div>
         </div>
-        <div className="">
+        <div className="ms-2">
         <div className="grid grid-cols-2">
           <Image src='/Rectangle15.png' className='' width={450} height={250} alt="war"/>
           <div className="bg-[#A571C4] w-[452px] space-y-1 py-2 px-5 rounded-e-lg -translate-x-4">
