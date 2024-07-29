@@ -14,7 +14,7 @@ function Footer() {
   return (
     <footer className='min-h-screen bg-gradient-to-b from-[#260A37] to-[#5D2588] -translate-y-[130px]'>
         <Image src={footer} width={1000} height={200} className='w-screen' alt='footer'/>
-        <div className='grid grid-cols-2 h-[500px]'>
+        <div className='grid grid-cols-2 h-[500px]' id='about'>
             <div className='my-14 mx-12 justify-center'>
                 <p className='text-[30px] font-extrabold text-center'><span className='text-[#CE7FFF]'>ABOUT</span><br/><span className='text-[#AB00E7]'>GAM</span>GAME</p>
                 <p className='text-center text-lg mt-6'>Lorem ipsum dolor sit amet. In illum veniam ut aperiam dolor et voluptate omnis qui veritatis dolorem et omnis doloribus et saepe inventore? Et

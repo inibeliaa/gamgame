@@ -11,7 +11,7 @@ import Best from "./components/best";
 
 export default function Home() {
   return (
-    <main className="h-screen">
+    <main className="h-screen" id="home">
       <Navbar/>
       <div className="w-full h-screen bg-cover bg-opacity-80" style={{ backgroundImage: "url('/colorful.png')"}}>
       <div className="bg-black bg-opacity-50">

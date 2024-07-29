@@ -5,6 +5,7 @@ import React from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import heart from "../../../public/Group 23.svg"
+import Link from "next/link";
 
 function Carousel2() {
   const settings = {
@@ -45,12 +46,16 @@ function Carousel2() {
                of kingdoms, fighting over the land of power 
               and being the one in power in this game</p>
               <div className="flex space-x-9 ms-2">
+              <Link href='/buy'>
                 <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase font-extrabold bg-[#5B0292] rounded-lg">
                   buy now
                 </button>
+                </Link>
+                <Link href='/detail'>
                 <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase font-extrabold bg-[#5B0292] rounded-lg">
                   Details
                 </button>
+                </Link>
                 <p className="font-extrabold text-2xl mt-2 ps-6">$50.00</p>
               </div>
          </div>
@@ -84,12 +89,16 @@ function Carousel2() {
                of kingdoms, fighting over the land of power 
               and being the one in power in this game</p>
               <div className="flex space-x-9 ms-2">
+              <Link href='/buy'>
                 <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase font-extrabold bg-[#5B0292] rounded-lg">
                   buy now
                 </button>
+                </Link>
+                <Link href='/detail'>
                 <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase font-extrabold bg-[#5B0292] rounded-lg">
                   Details
                 </button>
+                </Link>
                 <p className="font-extrabold text-2xl mt-2 ps-6">$50.00</p>
               </div>
          </div>
@@ -123,12 +132,16 @@ function Carousel2() {
                of kingdoms, fighting over the land of power 
               and being the one in power in this game</p>
               <div className="flex space-x-9 ms-2">
+                <Link href='/buy'>
                 <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase font-extrabold bg-[#5B0292] rounded-lg">
                   buy now
                 </button>
+                </Link>
+                <Link href='/detail'>
                 <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase font-extrabold bg-[#5B0292] rounded-lg">
                   Details
                 </button>
+                </Link>
                 <p className="font-extrabold text-2xl mt-2 ps-6">$50.00</p>
               </div>
          </div>
@@ -162,12 +175,16 @@ function Carousel2() {
                of kingdoms, fighting over the land of power 
               and being the one in power in this game</p>
               <div className="flex space-x-9 ms-2">
+                <Link href='/buy'>
                 <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase font-extrabold bg-[#5B0292] rounded-lg">
                   buy now
                 </button>
+                </Link>
+                <Link href='/detail'>
                 <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase font-extrabold bg-[#5B0292] rounded-lg">
                   Details
                 </button>
+                </Link>
                 <p className="font-extrabold text-2xl mt-2 ps-6">$50.00</p>
               </div>
          </div>

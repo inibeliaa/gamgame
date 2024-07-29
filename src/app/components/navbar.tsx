@@ -30,8 +30,12 @@ function Navbar() {
                 </Link>
             </li>
             <li className='mt-[30px] flex ms-[50px] me-[40px]'>
+                <Link href='/register'>
                 <button className='bg-gradient-to-b w-[85px] h-[32px] from-[#42166F] to-[#260A37] justify-center rounded-md me-[10px]'><p className=''>Regist</p></button>
+                </Link>
+                <Link href='/login'>
                 <button className='bg-gradient-to-b w-[85px] h-[32px] from-[#9B03F8] to-[#42166F] justify-center rounded-md'><p className=''>Log in</p></button>
+                </Link>
             </li>
         </ul>
     </nav>

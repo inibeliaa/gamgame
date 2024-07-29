@@ -36,7 +36,7 @@ function Card3({foto,genre1,judul,desc}:{foto:any, genre1:string, judul:string, 
         </div>
       </div>
    </div>
-  )
+  ) 
 }
 
 export default Card3
