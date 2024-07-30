@@ -9,6 +9,8 @@ import apk1 from "../../../public/Group 121.svg"
 import apk2 from "../../../public/Group 122.svg"
 import apk3 from "../../../public/Group 123.svg"
 import apk4 from "../../../public/Group 124.svg"
+import { Imprima } from 'next/font/google'
+const imprima = Imprima({ subsets: ['latin'], weight: ['400'] });
 
 function Footer() {
   return (
@@ -17,7 +19,7 @@ function Footer() {
         <div className='grid grid-cols-2 h-[500px]' id='about'>
             <div className='my-14 mx-12 justify-center'>
                 <p className='text-[30px] font-extrabold text-center'><span className='text-[#CE7FFF]'>ABOUT</span><br/><span className='text-[#AB00E7]'>GAM</span>GAME</p>
-                <p className='text-center text-lg mt-6'>Lorem ipsum dolor sit amet. In illum veniam ut aperiam dolor et voluptate omnis qui veritatis dolorem et omnis doloribus et saepe inventore? Et
+                <p className={`text-center text-lg mt-6 ${imprima.className}`}>Lorem ipsum dolor sit amet. In illum veniam ut aperiam dolor et voluptate omnis qui veritatis dolorem et omnis doloribus et saepe inventore? Et
                      sequi officia rem soluta repudiandae et quia voluptatum qui necessitatibus voluptatem. A doloribus perspiciatis et officiis quas aut consequuntur quod.</p>
                     <div className='flex mt-[60px] ms-[105px] space-x-6'>
                     <Image src={sosmed1} className='' alt='sosmed' width={60} height={40}/>

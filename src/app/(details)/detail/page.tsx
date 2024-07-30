@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import like from "../../../../public/Frame 14.svg"
+import { Imprima } from 'next/font/google'
+const imprima = Imprima({ subsets: ['latin'], weight: ['400'] });
 
 function Page() {
   return (
@@ -19,8 +21,8 @@ function Page() {
                 <p className='text-xl uppercase font-bold'>details</p>
                 <p className='text-[55px] uppercase font-bold'>victory</p>
                 <div className='bg-black px-3 bg-opacity-40 w-[490px] h-[290px]'>
-                    <p>MADE BY : APCEX STUDIO WORLD GAME</p>
-                    <p className='text-[20px]'>Lorem ipsum dolor sit amet. In illum veniam ut aperiam dolor
+                    <p className='text-stroke font-semibold'>MADE BY : APCEX STUDIO WORLD GAME</p>
+                    <p className={`text-[20px] ${imprima.className}`}>Lorem ipsum dolor sit amet. In illum veniam ut aperiam dolor
                          et voluptate omnis qui veritatis dolorem et omnis doloribus 
                          et saepe inventore? Et sequi officia rem soluta repudiandae 
                          et quia voluptatum qui necessitatibus voluptatem.
@@ -51,24 +53,24 @@ function Page() {
                 </li>
               </ul>
               <div className='flex w-[400px] space-y-3 space-x-4 -translate-y-10'>
-                <button className="text-[13px] h-[25px] ms-7 my-3 w-[100px] uppercase font-extrabold bg-[#9838948C] rounded-lg">
+                <button className="text-[13px] h-[25px] ms-7 my-3 w-[100px] uppercase font-bold bg-[#9838948C] rounded-lg">
                 MEKANIC
                 </button>
-                <button className="text-[13px] h-[25px] w-[130px] uppercase font-extrabold bg-[#9838948C] rounded-lg">
+                <button className="text-[13px] h-[25px] w-[130px] uppercase font-bold bg-[#9838948C] rounded-lg">
                 MULTY-PLAYER
                 </button>
-                <button className="text-[13px] h-[25px] w-[100px] uppercase font-extrabold bg-[#9838948C] rounded-lg">
+                <button className="text-[13px] h-[25px] w-[100px] uppercase font-bold bg-[#9838948C] rounded-lg">
                 BATTLE
                 </button>
                 </div>
                 <div className=' flex space-x-3 -translate-y-10'>
-                <button className="text-[13px] h-[25px] w-[100px] uppercase font-extrabold bg-[#9838948C] rounded-lg">
+                <button className="text-[13px] h-[25px] w-[100px] uppercase font-bold bg-[#9838948C] rounded-lg">
                 STORY
                 </button>
-                <button className="text-[13px] h-[25px] w-[100px] uppercase font-extrabold bg-[#9838948C] rounded-lg">
+                <button className="text-[13px] h-[25px] w-[100px] uppercase font-bold bg-[#9838948C] rounded-lg">
                 SURvIVAL
                 </button>
-                <button className="text-[13px] h-[25px] w-[100px] uppercase font-extrabold bg-[#9838948C] rounded-lg">
+                <button className="text-[13px] h-[25px] w-[100px] uppercase font-bold bg-[#9838948C] rounded-lg">
                 TEAM
                 </button>
                 </div>

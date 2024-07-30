@@ -1,23 +1,42 @@
 "use client"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import React from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import heart from "../../../public/Group 23.svg"
 import Link from "next/link";
-
+import prev from "../../../public/Group 8 (1).svg"
+import nextt from "../../../public/Group 7 (1).svg"
+import { Imprima } from "next/font/google";
+const imprima = Imprima({ subsets: ['latin'], weight: ['400'] });
 function Carousel2() {
+  const sliderRef = useRef<Slider>(null); // Specify the type of useRef as Slider
+
+  const next = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext(); // Access slickNext() via current
+    }
+  };
+
+  const previous = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev(); // Access slickPrev() via current
+    }
+  };
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    arrows: false
   };
   return (
     <div className="w-[900px] mt-[10px] mx-auto">
-      <Slider {...settings}>
+      <Slider 
+      ref={sliderRef}
+      {...settings}>
         <div className="ms-2">
         <div className="grid grid-cols-2">
           <Image src='/Rectangle15.png' className='' width={450} height={250} alt="war"/>
@@ -42,21 +61,21 @@ function Carousel2() {
               </svg>
               </li>
             </ul>
-            <p className="text-[15px] me-[110px]">A game that tells the story of the war in the era
+            <p className={`text-[16.5px] me-[80px] ${imprima.className}`}>A game that tells the story of the war in the era
                of kingdoms, fighting over the land of power 
               and being the one in power in this game</p>
               <div className="flex space-x-9 ms-2">
               <Link href='/buy'>
-                <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase font-extrabold bg-[#5B0292] rounded-lg">
+                <button className="text-[13px] h-[25px] w-[100px] mt-2 uppercase font-extrabold bg-[#5B0292] rounded-lg">
                   buy now
                 </button>
                 </Link>
                 <Link href='/detail'>
-                <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase font-extrabold bg-[#5B0292] rounded-lg">
+                <button className="text-[13px] h-[25px] w-[100px] mt-2 uppercase font-extrabold bg-[#5B0292] rounded-lg">
                   Details
                 </button>
                 </Link>
-                <p className="font-extrabold text-2xl mt-2 ps-6">$50.00</p>
+                <p className="font-extrabold text-2xl mt-1 ps-6">$50.00</p>
               </div>
          </div>
         </div>
@@ -85,21 +104,21 @@ function Carousel2() {
               </svg>
               </li>
             </ul>
-            <p className="text-[15px] me-[110px]">A game that tells the story of the war in the era
+            <p className={`text-[16.5px] me-[80px] ${imprima.className}`}>A game that tells the story of the war in the era
                of kingdoms, fighting over the land of power 
               and being the one in power in this game</p>
               <div className="flex space-x-9 ms-2">
               <Link href='/buy'>
-                <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase font-extrabold bg-[#5B0292] rounded-lg">
+                <button className="text-[13px] h-[25px] w-[100px] mt-2 uppercase font-extrabold bg-[#5B0292] rounded-lg">
                   buy now
                 </button>
                 </Link>
                 <Link href='/detail'>
-                <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase font-extrabold bg-[#5B0292] rounded-lg">
+                <button className="text-[13px] h-[25px] w-[100px] mt-2 uppercase font-extrabold bg-[#5B0292] rounded-lg">
                   Details
                 </button>
                 </Link>
-                <p className="font-extrabold text-2xl mt-2 ps-6">$50.00</p>
+                <p className="font-extrabold text-2xl mt-1 ps-6">$50.00</p>
               </div>
          </div>
         </div>
@@ -128,21 +147,21 @@ function Carousel2() {
               </svg>
               </li>
             </ul>
-            <p className="text-[15px] me-[110px]">A game that tells the story of the war in the era
+            <p className={`text-[16.5px] me-[80px] ${imprima.className}`}>A game that tells the story of the war in the era
                of kingdoms, fighting over the land of power 
               and being the one in power in this game</p>
               <div className="flex space-x-9 ms-2">
-                <Link href='/buy'>
-                <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase font-extrabold bg-[#5B0292] rounded-lg">
+              <Link href='/buy'>
+                <button className="text-[13px] h-[25px] w-[100px] mt-2 uppercase font-extrabold bg-[#5B0292] rounded-lg">
                   buy now
                 </button>
                 </Link>
                 <Link href='/detail'>
-                <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase font-extrabold bg-[#5B0292] rounded-lg">
+                <button className="text-[13px] h-[25px] w-[100px] mt-2 uppercase font-extrabold bg-[#5B0292] rounded-lg">
                   Details
                 </button>
                 </Link>
-                <p className="font-extrabold text-2xl mt-2 ps-6">$50.00</p>
+                <p className="font-extrabold text-2xl mt-1 ps-6">$50.00</p>
               </div>
          </div>
         </div>
@@ -171,26 +190,34 @@ function Carousel2() {
               </svg>
               </li>
             </ul>
-            <p className="text-[15px] me-[110px]">A game that tells the story of the war in the era
+            <p className={`text-[16.5px] me-[80px] ${imprima.className}`}>A game that tells the story of the war in the era
                of kingdoms, fighting over the land of power 
               and being the one in power in this game</p>
               <div className="flex space-x-9 ms-2">
-                <Link href='/buy'>
-                <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase font-extrabold bg-[#5B0292] rounded-lg">
+              <Link href='/buy'>
+                <button className="text-[13px] h-[25px] w-[100px] mt-2 uppercase font-extrabold bg-[#5B0292] rounded-lg">
                   buy now
                 </button>
                 </Link>
                 <Link href='/detail'>
-                <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase font-extrabold bg-[#5B0292] rounded-lg">
+                <button className="text-[13px] h-[25px] w-[100px] mt-2 uppercase font-extrabold bg-[#5B0292] rounded-lg">
                   Details
                 </button>
                 </Link>
-                <p className="font-extrabold text-2xl mt-2 ps-6">$50.00</p>
+                <p className="font-extrabold text-2xl mt-1 ps-6">$50.00</p>
               </div>
          </div>
         </div>
         </div>
       </Slider>
+      <div className="flex -translate-y-[155px]">
+      <button className="-translate-x-[70px]" onClick={previous}>
+          <Image src={prev} width={60} height={60} alt="prev"/>
+          </button>
+          <button className="translate-x-[850px]" onClick={next}>
+          <Image src={nextt} width={60} height={60} alt="next"/>
+          </button>
+      </div>
     </div>
   );
 }

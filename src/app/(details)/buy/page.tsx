@@ -17,11 +17,11 @@ function Page() {
         alt="Background"
         className="absolute inset-0 object-fill opacity-80 h-[690px] w-full" width={1200} height={700}
 /> 
-       <div className="absolute inset-0 bg-gradient-to-b h-[690px] from-black via-transparent to-[#5B0292] opacity-50"></div>
+       <div className="absolute inset-0 bg-gradient-to-b h-[690px] from-black via-transparent to-[#5B0292] opacity-75"></div>
        <div className='absolute inset-0 grid grid-cols-2'>
        <div className='mt-[120px] ms-28'>
                 <p className='text-[55px] uppercase font-bold'>victory</p>
-                <p className='-translate-y-4'>MADE BY : APCEX STUDIO WORLD GAME</p>
+                <p className='-translate-y-4 text-stroke font-semibold'>MADE BY : APCEX STUDIO WORLD GAME</p>
                 <p className='font-extrabold text-lg -translate-y-3 ms-[330px]'>$65.00</p>
                 <div className=''>
               <Image src='/Rectangle 81.png' width={390} height={200} alt='detail'/>
@@ -34,7 +34,7 @@ function Page() {
                 [12323 REVIEW]
                 </li>
                 </ul>
-                <div className='flex w-[400px] space-y-3 space-x-4 -translate-y-12'>
+                <div className='flex w-[400px] space-y-3 space-x-4 font-bold -translate-y-12'>
                     <button className="text-[13px] h-[25px] ms-7 my-3 w-[100px] uppercase  bg-[#9838948C] rounded-lg">
                     MEKANIC
                     </button>
@@ -45,7 +45,7 @@ function Page() {
                     horor
                     </button>
                     </div>
-                    <div className=' flex space-x-3 -translate-y-12'>
+                    <div className=' flex space-x-3 -translate-y-12 font-bold'>
                     <button className="text-[13px] h-[25px] w-[100px] uppercase  bg-[#9838948C] rounded-lg">
                     STORY
                     </button>

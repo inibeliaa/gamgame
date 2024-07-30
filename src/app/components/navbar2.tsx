@@ -6,8 +6,8 @@ import Link from 'next/link';
 function Navbar2() {
   return (
       <div className='bg-gradient-to-b h-[250px] from-black to-transparent'>
-            <nav className='fixed top-0 z-20 w-full p-6'>
-            <ul className='flex justify-between items-center px-8'>
+            <nav className='fixed top-0 z-20 w-full py-5'>
+            <ul className='flex justify-between items-center px-9'>
                 <li>
                 <Image src={logo} alt='logo' width={200} height={39} />
                 </li>

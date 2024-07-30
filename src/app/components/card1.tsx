@@ -1,12 +1,16 @@
 import Link from 'next/link'
 import React from 'react'
+import { Imprima } from 'next/font/google'
+const imprima = Imprima({ subsets: ['latin'], weight: ['400'] });
+import { Inknut_Antiqua } from 'next/font/google';
+const inknut = Inknut_Antiqua({ subsets: ['latin'], weight: ['800'] });
 
 function Card1({foto,genre1,judul,desc}:{foto:any, genre1:string, judul:string, desc:string}) {
   return (
    <div className='bg-[#A571C6] mt-10 w-[260px] rounded-b-xl'>
       <img src={foto} alt='foto'/>
       <div className='p-2'>
-      <p className="text-[#260A37] text-xs font-bold">Genre<span className="text-white ms-3">
+      <p className={`text-[#260A37] text-[10px] font-bold ${inknut.className}`}>Genre<span className="text-white ms-3">
               {genre1}</span></p>
       <p className="uppercase text-2xl font-extrabold">{judul}</p>
       <ul className="flex space-x-3">
@@ -23,7 +27,7 @@ function Card1({foto,genre1,judul,desc}:{foto:any, genre1:string, judul:string, 
               </svg>
               </li>
             </ul>
-      <p className="text-[15px]">{desc}</p>
+            <p  className={`text-[15px] ${imprima.className}`}>{desc}</p>
       <Link href='/detail'>
         <button className="text-[13px] h-[25px] w-[100px] mt-3 uppercase ms-[130px] font-extrabold bg-[#5B0292] rounded-lg">
                     Details
