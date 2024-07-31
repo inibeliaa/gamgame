@@ -24,6 +24,7 @@ function CustomArrows(){
   };
   const settings = {
     dots: true,
+    customPaging: () => <div className="customDot" />,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
