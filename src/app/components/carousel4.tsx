@@ -23,7 +23,8 @@ export default function Carousel4() {
     }
   };
   var settings = {
-    dots: true,
+    dots:true,
+    customPaging: () => <div className="customDot2" />,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
