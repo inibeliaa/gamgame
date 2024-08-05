@@ -36,7 +36,7 @@ function CustomArrows(){
       ref={sliderRef}
        {...settings}>
         <div className="ms-7">
-          <Image src='/game1.png' className="mt-[50px] mx-auto shadow-[0px_0px_20px_12px_#FFFFFF36,0px_0px_45px_12px_#CB76FF]" alt="game 1" width={700} height={100}/>
+          <Image src='/game1.png' className="mt-[50px] me-32 mx-auto shadow-[0px_0px_20px_12px_#FFFFFF36,0px_0px_45px_12px_#CB76FF]" alt="game 1" width={700} height={100}/>
           <div>
             <p className="text-[70px] text-center font-extrabold -translate-y-[200px]">THE WARRIOR</p>
             <div className="flex space-x-[122px] -translate-y-[170px] translate-x-[200px]">
@@ -113,7 +113,7 @@ function CustomArrows(){
         </div>
       </Slider>
       <div className="flex -translate-y-[350px]">
-      <button className="-translate-x-16 " onClick={previous}>
+      <button className="-translate-x-[70px]" onClick={previous}>
           <Image src={prev} width={80} height={80} alt="prev"/>
           </button>
           <button className="translate-x-[790px]" onClick={next}>

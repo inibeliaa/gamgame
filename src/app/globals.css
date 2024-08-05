@@ -31,12 +31,7 @@ body {
     text-wrap: balance;
   }
   .text-stroke{
-    -webkit-text-stroke: 0.8px #8900AB;
-  }
-  .imprima-regular {
-    font-family: "Imprima", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    -webkit-text-stroke: 0.5px #8900AB;
   }
   .slick-dots {
     margin: 0;
